@@ -22,7 +22,7 @@ client.on("room.message", (roomId, event) => {
     const sender = event["sender"];
     const body = event["content"]["body"];
     console.log(`${roomId}: ${sender} says '${body}`);
-    //matrixClient.invite("!OzuqrguwOMkplazdbK:elokapina.fi", `${sender}`)
+    //matrixClient.invite("ROOM TO INVITE HERE", `${sender}`)
 });
 client.on("room.message", (roomId, event) => {
     if (! event["content"]) return;
